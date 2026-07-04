@@ -1,22 +1,19 @@
-# Agent Compliance Scanner
+# EU AI Act Compliance Checklist for AI Agents
 
-**EU AI Act & AB 316 Readiness Check for AI Agents**
+**A structured checklist for EU AI Act (Articles 8-15, 50) and AB 316 readiness assessment.**
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/)
 
-A lightweight CLI tool that scans your AI agent or MCP server for compliance gaps against:
+A structured checklist for AI agent developers facing the **EU AI Act** (effective August 2, 2026) and **California AB 316** (effective January 1, 2026).
 
-- **EU AI Act** (effective August 2, 2026) — Articles 8–15 (High-Risk Requirements) + Article 50 (Transparency)
-- **California AB 316** (effective January 1, 2026) — Audit trail readiness
-
-> ⚠️ This tool provides a compliance **gap analysis**, NOT legal advice. Consult qualified legal counsel.
+> ⚠️ This is a compliance knowledge tool — it provides the regulatory requirements in a structured, executable format. It does NOT automatically scan your codebase. It helps you systematically verify your readiness against each requirement. Consult qualified legal counsel for regulatory compliance.
 
 ## Why This Exists
 
-In one month (August 2, 2026), the EU AI Act enters full enforcement. Organizations deploying AI agents in the EU must comply with risk management, transparency, documentation, and human oversight requirements. California's AB 316 already removes the "the AI did it autonomously" defense — requiring audit trails.
+In one month (August 2, 2026), the EU AI Act enters full enforcement. Articles 8-15 require risk management, data governance, technical documentation, record-keeping, transparency, human oversight, and accuracy/robustness for high-risk AI systems. Article 50 requires AI transparency labeling for all systems interacting with humans.
 
-Most agent developers haven't mapped their compliance exposure. This scanner gives you a first-pass gap analysis in under 60 seconds.
+Most agent developers don't know what's actually required. This checklist translates the regulatory text into an executable, structured format — so you can methodically verify readiness rather than reading 144 pages of legalese.
 
 ## Quick Start
 
