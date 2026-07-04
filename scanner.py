@@ -16,7 +16,7 @@ Output: JSON or Markdown compliance gap report.
 import json
 import argparse
 import sys
-from datetime import datetime
+from datetime import datetime, timezone
 from pathlib import Path
 
 # ─── Check Definitions ───────────────────────────────────────────
@@ -169,7 +169,7 @@ def run_scan(manifest: dict | None, interactive: bool = False) -> dict:
         "scan_metadata": {
             "tool": "agent-compliance-scanner",
             "version": "0.1.0",
-            "timestamp": datetime.utcnow().isoformat() + "Z",
+            "timestamp": datetime.now(timezone.utc).isoformat(),
             "regulations_covered": ["EU AI Act (effective 2026-08-02)", "California AB 316 (effective 2026-01-01)"],
             "disclaimer": "This tool provides a compliance gap analysis, NOT legal advice. Consult qualified legal counsel for regulatory compliance.",
         },
