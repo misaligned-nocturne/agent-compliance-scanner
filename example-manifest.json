@@ -1,0 +1,22 @@
+{
+  "agent": {
+    "name": "example-agent",
+    "description": "An example MCP server that processes customer support tickets",
+    "capabilities": ["text_generation", "ticket_routing", "sentiment_analysis"],
+    "deployment": "cloud",
+    "interacts_with_humans": true,
+    "generates_content": true
+  },
+  "compliance": {
+    "high_risk_classification": "na",
+    "risk_management_system": false,
+    "data_governance": false,
+    "technical_documentation": false,
+    "record_keeping": false,
+    "transparency_to_deployers": false,
+    "human_oversight": "na",
+    "accuracy_robustness_cybersecurity": false,
+    "ai_transparency_labeling": false,
+    "ab316_audit_trail": false
+  }
+}
